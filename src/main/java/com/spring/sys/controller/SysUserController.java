@@ -172,7 +172,7 @@ public class SysUserController extends BaseController {
     }
 
     /**
-     * 保存登录密码
+     * 保存登录密码啊
      */
     @SysLog("修改登录密码")
     @PostMapping("/updatePwd")
