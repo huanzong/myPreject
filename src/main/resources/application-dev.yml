@@ -41,7 +41,7 @@ spring:
       web-stat-filter: # 单个url调用sql列表
         enabled: true
         url-pattern: /*
-        exclusions: '*.js,*.gif,*.jpg,*.png,*.swf,*.css,*.ico,/druid/*,/logout.html'
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.swf,*.css,*.woff,*.ico,/druid/*,/logout.html'
         profile-enable: true
         principal-cookie-name: sid
       aop-patterns:

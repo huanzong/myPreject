@@ -200,6 +200,8 @@ public class ShiroConfig {
         filterMap.put("/fonts/**", "anon");
         filterMap.put("/img/**", "anon");
         filterMap.put("/js/**", "anon");
+        filterMap.put("/assets/**", "anon");
+        filterMap.put("/assets/fonts/**", "anon");
         filterMap.put("/plugins/**", "anon");
         filterMap.put("/profile/**", "anon");
         filterMap.put("/druid/**", "anon");

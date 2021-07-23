@@ -241,6 +241,7 @@
                     <include>static/fonts/**</include>
                 </includes>
             </resource>
+
         </resources>
 	</build>
     <!--阿里云nexus-->
