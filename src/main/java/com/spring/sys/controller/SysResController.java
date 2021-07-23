@@ -26,7 +26,7 @@ import java.util.Map;
  * @since V1.0
  */
 @Controller
-@RequestMapping("/sys/res")
+@RequestMapping("/admin/sys/res")
 public class SysResController extends BaseController {
     @Autowired
     private SysResService sysResService;

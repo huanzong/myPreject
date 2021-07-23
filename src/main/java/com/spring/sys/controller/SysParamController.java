@@ -28,7 +28,7 @@ import java.util.Map;
  * @since V1.0
  */
 @Controller
-@RequestMapping("/sys/param")
+@RequestMapping("/admin/sys/param")
 public class SysParamController {
 	@Autowired
 	private SysParamService sysParamService;

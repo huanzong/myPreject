@@ -30,7 +30,7 @@ import java.util.Map;
  * @since V1.0
  */
 @Controller
-@RequestMapping("/sys/role")
+@RequestMapping("/admin/sys/role")
 public class SysRoleController extends BaseController {
     @Autowired
     private SysRoleService sysRoleService;

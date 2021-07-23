@@ -31,7 +31,7 @@ import java.util.Map;
  * @since V1.0
  */
 @Controller
-@RequestMapping("/sys/user")
+@RequestMapping("/admin/sys/user")
 public class SysUserController extends BaseController {
     @Autowired
     private SysUserService sysUserService;

@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.spring</groupId>
-	<artifactId>Tuanzi</artifactId>
+	<artifactId>myProject</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>Tuanzi</name>
-	<description>Tuanzi 后台管理系统</description>
+	<name>myPreject</name>
+	<description>T后台管理系统</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

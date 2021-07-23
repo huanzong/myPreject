@@ -66,7 +66,7 @@
                 <input type="text" name="captcha" id="captcha"
                        class="form-control"
                        placeholder="输入验证码" maxlength="4" onkeydown="onKeyDown()">
-                <img th:src="@{/captcha(t=${#dates.createNow()})}" alt="验证码图片" class="kaptcha" id="kaptcha"
+                <img th:src="@{/admin/captcha(t=${#dates.createNow()})}" alt="验证码图片" class="kaptcha" id="kaptcha"
                      onclick="changeCaptcha()" title="看不清换一张?">
             </div>
             <div class="form-submit">

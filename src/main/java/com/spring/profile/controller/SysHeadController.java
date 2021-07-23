@@ -28,7 +28,7 @@ import java.io.*;
  * @since v1.0
  */
 @Controller
-@RequestMapping("/sys/head")
+@RequestMapping("/admin/sys/head")
 public class SysHeadController extends BaseController {
 
     @Autowired

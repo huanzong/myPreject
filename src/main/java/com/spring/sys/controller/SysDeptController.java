@@ -26,7 +26,7 @@ import java.util.*;
  * @since V1.0
  */
 @Controller
-@RequestMapping("/sys/dept")
+@RequestMapping("/admin/sys/dept")
 public class SysDeptController extends BaseController {
     @Autowired
     private SysDeptService sysDeptService;

@@ -32,6 +32,7 @@ import java.util.List;
  * @since V1.0
  */
 @Controller
+@RequestMapping("/admin")
 public class SysLoginController extends BaseController{
     @Autowired
     private Producer captchaProducer;
@@ -102,7 +103,7 @@ public class SysLoginController extends BaseController{
     @GetMapping("/logout")
     public String logout() {
         ShiroUtils.logout();
-        return "redirect:/login";
+        return "redirect:/admin/login";
     }
 
     /**
@@ -129,4 +130,6 @@ public class SysLoginController extends BaseController{
     public String main() {
         return "main";
     }
+
+
 }
