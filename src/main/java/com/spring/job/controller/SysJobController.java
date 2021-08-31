@@ -27,7 +27,7 @@ import java.util.Map;
  * @since V1.0
  */
 @Controller
-@RequestMapping("/sys/job")
+@RequestMapping("/admin/sys/job")
 public class SysJobController extends BaseController {
     @Autowired
     private SysJobService sysJobService;

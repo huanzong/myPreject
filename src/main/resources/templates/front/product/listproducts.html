@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Ysera - Products Grid Left Sidebar</title>
+    <title>Ysera - Products List Fullwidth</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{../assets/images/favicon.png}"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/chosen.min.css">
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css">
-    <link rel="stylesheet" href="assets/css/jquery.scrollbar.min.css">
-    <link rel="stylesheet" href="assets/css/mobile-menu.css">
-    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" th:href="@{../css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{../css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/owl.carousel.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/animate.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/jquery-ui.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/slick.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/chosen.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/pe-icon-7-stroke.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/magnific-popup.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/lightbox.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/js/fancybox/source/jquery.fancybox.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/jquery.scrollbar.min.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/mobile-menu.css}">
+    <link rel="stylesheet" th:href="@{../css/flaticon.css}">
+    <link rel="stylesheet" th:href="@{../assets/css/style.css}">
 </head>
-<body class="productsgrid-page">
+<body class="inblog-page">
 <header class="header style7">
     <div class="top-bar">
         <div class="container">
@@ -61,7 +61,7 @@
                 </div>
                 <ul class="header-user-links">
                     <li>
-                        <a href="login.html">Login or Register</a>
+                        <a href="../login.html">Login or Register</a>
                     </li>
                 </ul>
             </div>
@@ -72,8 +72,8 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo.png" alt="img">
+                        <a href="../index.html">
+                            <img src="../assets/images/logo.png" alt="img">
                         </a>
                     </div>
                 </div>
@@ -248,26 +248,26 @@
                     <div class="container-wapper">
                         <ul class="ysera-clone-mobile-menu ysera-nav main-menu " id="menu-main-menu">
                             <li class="menu-item  menu-item-has-children">
-                                <a href="index.html" class="ysera-menu-item-title" title="Home">Home</a>
+                                <a href="../index.html" class="ysera-menu-item-title" title="Home">Home</a>
                                 <span class="toggle-submenu"></span>
                                 <ul class="submenu">
                                     <li class="menu-item">
-                                        <a href="index.html">Home 01</a>
+                                        <a href="../index.html">Home 01</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="home2.html">Home 02</a>
+                                        <a href="../home2.html">Home 02</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="home3.html">Home 03</a>
+                                        <a href="../home3.html">Home 03</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-has-children">
-                                <a href="gridproducts.html" class="ysera-menu-item-title" title="Shop">Shop</a>
+                                <a href="productGrid" class="ysera-menu-item-title" title="Shop">Shop</a>
                                 <span class="toggle-submenu"></span>
                                 <ul class="submenu">
                                     <li class="menu-item">
-                                        <a href="gridproducts.html">Grid Fullwidth</a>
+                                        <a href="productGrid">Grid Fullwidth</a>
                                     </li>
                                     <li class="menu-item">
                                         <a href="gridproducts_leftsidebar.html">Grid Left sidebar</a>
@@ -293,16 +293,16 @@
                                                         <a href="shoppingcart.html">Shopping Cart</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="checkout.html">Checkout</a>
+                                                        <a href="../checkout.html">Checkout</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact us</a>
+                                                        <a href="../system/contact.html">Contact us</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="404page.html">404</a>
+                                                        <a href="../404page.html">404</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="login.html">Login/Register</a>
+                                                        <a href="../login.html">Login/Register</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -333,7 +333,7 @@
                                 </div>
                             </li>
                             <li class="menu-item  menu-item-has-children">
-                                <a href="inblog_right-siderbar.html" class="ysera-menu-item-title"
+                                <a href="../blog/inblog_right-siderbar.html" class="ysera-menu-item-title"
                                    title="Blogs">Blogs</a>
                                 <span class="toggle-submenu"></span>
                                 <ul class="submenu">
@@ -342,13 +342,13 @@
                                         <span class="toggle-submenu"></span>
                                         <ul class="submenu">
                                             <li class="menu-item">
-                                                <a href="bloggrid.html">Grid</a>
+                                                <a href="../blog/bloggrid.html">Grid</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="bloglist.html">List</a>
+                                                <a href="../blog/bloglist.html">List</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="bloglist-leftsidebar.html">List Sidebar</a>
+                                                <a href="../blog/bloglist-leftsidebar.html">List Sidebar</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -357,17 +357,17 @@
                                         <span class="toggle-submenu"></span>
                                         <ul class="submenu">
                                             <li class="menu-item">
-                                                <a href="inblog_left-siderbar.html">Left Sidebar</a>
+                                                <a href="../blog/inblog_left-siderbar.html">Left Sidebar</a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="inblog_right-siderbar.html">Right Sidebar</a>
+                                                <a href="../blog/inblog_right-siderbar.html">Right Sidebar</a>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="ysera-menu-item-title" title="About">About</a>
+                                <a href="../system/about.html" class="ysera-menu-item-title" title="About">About</a>
                             </li>
                         </ul>
                     </div>
@@ -381,7 +381,7 @@
         <div class="item mobile-logo">
             <div class="logo">
                 <a href="#">
-                    <img src="assets/images/logo.png" alt="img">
+                    <img src="../assets/images/logo.png" alt="img">
                 </a>
             </div>
         </div>
@@ -454,28 +454,25 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-product left-sidebar">
+<div class="main-content main-content-product no-sidebar">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-trail breadcrumbs">
                     <ul class="trail-items breadcrumb">
                         <li class="trail-item trail-begin">
-                            <a href="index.html">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
                         <li class="trail-item trail-end active">
-                            Grid Products
+                            List Products Left Sidebar
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="content-area shop-grid-content no-banner col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="content-area  shop-grid-content full-width col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="site-main">
-                    <h3 class="custom_blog_title">
-                        Grid Products
-                    </h3>
                     <div class="shop-top-control">
                         <form class="select-item select-form">
                             <span class="title">Sort</span>
@@ -487,10 +484,10 @@
                                 <option value="5">6 Products/Page</option>
                             </select>
                         </form>
-                        <form class="filter-choice select-form">s
+                        <form class="filter-choice select-form">
                             <span class="title">Sort by</span>
-                            <select title="sort-by" data-placeholder="Price: Low to High" class="chosen-select">
-                                <option value="1">Price: Low to High</option>
+                            <select title="by" data-placeholder="Price: Low to High" class="chosen-select">
+                                <option value="1">Default sorting</option>
                                 <option value="2">Sort by popularity</option>
                                 <option value="3">Sort by average rating</option>
                                 <option value="4">Sort by newness</option>
@@ -499,11 +496,11 @@
                         </form>
                         <div class="grid-view-mode">
                             <div class="inner">
-                                <a href="listproducts.html" class="modes-mode mode-list">
+                                <a href="listproducts.html" class="modes-mode mode-list active">
                                     <span></span>
                                     <span></span>
                                 </a>
-                                <a href="gridproducts.html" class="modes-mode mode-grid  active">
+                                <a href="productGrid" class="modes-mode mode-grid">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -512,8 +509,11 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="row list-products auto-clear equal-container product-grid">
-                        <li class="product-item  col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
+                    <h3 class="custom_blog_title">
+                        List Products
+                    </h3>
+                    <ul class="row list-products auto-clear equal-container product-list">
+                        <li class="product-item style-list col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ts-12">
                             <div class="product-inner equal-element">
                                 <div class="product-top">
                                     <div class="flash">
@@ -524,30 +524,24 @@
 											</span>
                                     </div>
                                 </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-1.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
+                                <div class="products-bottom-content">
+                                    <div class="product-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="#">
+                                                <img src="../assets/images/product-item-4.jpg" alt="img">
+                                            </a>
                                             <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Aluminum Plant</a>
-                                    </h5>
-                                    <div class="group-info">
+                                    <div class="product-info-left">
+                                        <div class="yith-wcwl-add-to-wishlist">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="#">Add to Wishlist</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="product-name product_title">
+                                            <a href="#">Drop Earrings</a>
+                                        </h5>
                                         <div class="stars-rating">
                                             <div class="star-rating">
                                                 <span class="star-3"></span>
@@ -556,218 +550,78 @@
                                                 (3)
                                             </div>
                                         </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
+                                        <ul class="product-attributes">
+                                            <li>
+                                                Material:
+                                            </li>
+                                            <li>
+                                                <a href="#">Plastic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Woody</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-color">
+                                                Color:
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Black</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">White</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Brown</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-text-label">
+                                                Pots Size:
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XS</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">S</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">M</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">L</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XL</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item product-type-variable col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-2.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
+                                    <div class="product-info-right">
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                        <div class="product-list-message">
+                                            <i class="icon fa fa-truck" aria-hidden="true"></i>
+                                            UK Free Delivery
+                                        </div>
+                                        <form class="cart">
+                                            <div class="single_variation_wrap">
+                                                <div class="quantity">
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                        <input type="text" data-step="1" data-min="0" value="1"
+                                                               title="Qty" class="input-qty qty" size="4">
+                                                        <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                    </div>
                                                 </div>
+                                                <button class="single_add_to_cart_button button">Add to cart</button>
                                             </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Splendid Diamond</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="product-item product-type-variable col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                    <div class="flash">
-											<span class="onnew">
-												<span class="text">
-													new
-												</span>
-											</span>
-                                    </div>
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-3.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Dazzling Earrings</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item product-type-variable col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-4.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Elegant Neckwear</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item  col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-5.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Boston Fern</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item product-type-variable col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
+                        <li class="product-item style-list col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ts-12">
                             <div class="product-inner equal-element">
                                 <div class="product-top">
                                     <div class="flash">
@@ -778,30 +632,24 @@
 											</span>
                                     </div>
                                 </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-6.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
+                                <div class="products-bottom-content">
+                                    <div class="product-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="#">
+                                                <img src="../assets/images/product-item-1.jpg" alt="img">
+                                            </a>
                                             <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Rose Gold</a>
-                                    </h5>
-                                    <div class="group-info">
+                                    <div class="product-info-left">
+                                        <div class="yith-wcwl-add-to-wishlist">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="#">Add to Wishlist</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="product-name product_title">
+                                            <a href="#">Drop Earrings</a>
+                                        </h5>
                                         <div class="stars-rating">
                                             <div class="star-rating">
                                                 <span class="star-3"></span>
@@ -810,115 +658,78 @@
                                                 (3)
                                             </div>
                                         </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
+                                        <ul class="product-attributes">
+                                            <li>
+                                                Material:
+                                            </li>
+                                            <li>
+                                                <a href="#">Plastic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Woody</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-color">
+                                                Color:
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Black</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">White</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Brown</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-text-label">
+                                                Pots Size:
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XS</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">S</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">M</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">L</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XL</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item product-type-variable col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-7.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
+                                    <div class="product-info-right">
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                        <div class="product-list-message">
+                                            <i class="icon fa fa-truck" aria-hidden="true"></i>
+                                            UK Free Delivery
+                                        </div>
+                                        <form class="cart">
+                                            <div class="single_variation_wrap">
+                                                <div class="quantity">
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                        <input type="text" data-step="1" data-min="0" value="1"
+                                                               title="Qty" class="input-qty qty" size="4">
+                                                        <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                    </div>
                                                 </div>
+                                                <button class="single_add_to_cart_button button">Add to cart</button>
                                             </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Modern Neckwear </a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="product-item  col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-20.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Magnificent Bangle</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item product-type-variable col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
+                        <li class="product-item style-list col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ts-12">
                             <div class="product-inner equal-element">
                                 <div class="product-top">
                                     <div class="flash">
@@ -929,30 +740,24 @@
 											</span>
                                     </div>
                                 </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-9.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
+                                <div class="products-bottom-content">
+                                    <div class="product-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="#">
+                                                <img src="../assets/images/product-item-2.jpg" alt="img">
+                                            </a>
                                             <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Modern Platinum</a>
-                                    </h5>
-                                    <div class="group-info">
+                                    <div class="product-info-left">
+                                        <div class="yith-wcwl-add-to-wishlist">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="#">Add to Wishlist</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="product-name product_title">
+                                            <a href="#">Drop Earrings</a>
+                                        </h5>
                                         <div class="stars-rating">
                                             <div class="star-rating">
                                                 <span class="star-3"></span>
@@ -961,122 +766,78 @@
                                                 (3)
                                             </div>
                                         </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
+                                        <ul class="product-attributes">
+                                            <li>
+                                                Material:
+                                            </li>
+                                            <li>
+                                                <a href="#">Plastic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Woody</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-color">
+                                                Color:
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Black</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">White</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Brown</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-text-label">
+                                                Pots Size:
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XS</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">S</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">M</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">L</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XL</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item  col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-8.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
+                                    <div class="product-info-right">
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                        <div class="product-list-message">
+                                            <i class="icon fa fa-truck" aria-hidden="true"></i>
+                                            UK Free Delivery
+                                        </div>
+                                        <form class="cart">
+                                            <div class="single_variation_wrap">
+                                                <div class="quantity">
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                        <input type="text" data-step="1" data-min="0" value="1"
+                                                               title="Qty" class="input-qty qty" size="4">
+                                                        <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                    </div>
                                                 </div>
+                                                <button class="single_add_to_cart_button button">Add to cart</button>
                                             </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Dainty Bangle</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="product-item  col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
-                            <div class="product-inner equal-element">
-                                <div class="product-top">
-                                    <div class="flash">
-											<span class="onnew">
-												<span class="text">
-													new
-												</span>
-											</span>
-                                    </div>
-                                </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-21.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Riona Pearl</a>
-                                    </h5>
-                                    <div class="group-info">
-                                        <div class="stars-rating">
-                                            <div class="star-rating">
-                                                <span class="star-3"></span>
-                                            </div>
-                                            <div class="count-star">
-                                                (3)
-                                            </div>
-                                        </div>
-                                        <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item  col-lg-4 col-md-6 col-sm-6 col-xs-6 col-ts-12 style-1">
+                        <li class="product-item style-list col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ts-12">
                             <div class="product-inner equal-element">
                                 <div class="product-top">
                                     <div class="flash">
@@ -1087,30 +848,24 @@
 											</span>
                                     </div>
                                 </div>
-                                <div class="product-thumb">
-                                    <div class="thumb-inner">
-                                        <a href="#">
-                                            <img src="assets/images/product-item-22.jpg" alt="img">
-                                        </a>
-                                        <div class="thumb-group">
-                                            <div class="yith-wcwl-add-to-wishlist">
-                                                <div class="yith-wcwl-add-button">
-                                                    <a href="#">Add to Wishlist</a>
-                                                </div>
-                                            </div>
+                                <div class="products-bottom-content">
+                                    <div class="product-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="#">
+                                                <img src="../assets/images/product-item-3.jpg" alt="img">
+                                            </a>
                                             <a href="#" class="button quick-wiew-button">Quick View</a>
-                                            <div class="loop-form-add-to-cart">
-                                                <button class="single_add_to_cart_button button">Add to cart
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-info">
-                                    <h5 class="product-name product_title">
-                                        <a href="#">Slender Earrings </a>
-                                    </h5>
-                                    <div class="group-info">
+                                    <div class="product-info-left">
+                                        <div class="yith-wcwl-add-to-wishlist">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="#">Add to Wishlist</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="product-name product_title">
+                                            <a href="#">Drop Earrings</a>
+                                        </h5>
                                         <div class="stars-rating">
                                             <div class="star-rating">
                                                 <span class="star-3"></span>
@@ -1119,20 +874,295 @@
                                                 (3)
                                             </div>
                                         </div>
+                                        <ul class="product-attributes">
+                                            <li>
+                                                Material:
+                                            </li>
+                                            <li>
+                                                <a href="#">Plastic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Woody</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-color">
+                                                Color:
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Black</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">White</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Brown</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-text-label">
+                                                Pots Size:
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XS</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">S</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">M</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">L</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XL</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-info-right">
                                         <div class="price">
-                                            <del>
-                                                $65
-                                            </del>
-                                            <ins>
-                                                $45
-                                            </ins>
+                                            $45
                                         </div>
+                                        <div class="product-list-message">
+                                            <i class="icon fa fa-truck" aria-hidden="true"></i>
+                                            UK Free Delivery
+                                        </div>
+                                        <form class="cart">
+                                            <div class="single_variation_wrap">
+                                                <div class="quantity">
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                        <input type="text" data-step="1" data-min="0" value="1"
+                                                               title="Qty" class="input-qty qty" size="4">
+                                                        <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                    </div>
+                                                </div>
+                                                <button class="single_add_to_cart_button button">Add to cart</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item style-list col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ts-12">
+                            <div class="product-inner equal-element">
+                                <div class="product-top">
+                                    <div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+                                    </div>
+                                </div>
+                                <div class="products-bottom-content">
+                                    <div class="product-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="#">
+                                                <img src="../assets/images/product-item-5.jpg" alt="img">
+                                            </a>
+                                            <a href="#" class="button quick-wiew-button">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-left">
+                                        <div class="yith-wcwl-add-to-wishlist">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="#">Add to Wishlist</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="product-name product_title">
+                                            <a href="#">Drop Earrings</a>
+                                        </h5>
+                                        <div class="stars-rating">
+                                            <div class="star-rating">
+                                                <span class="star-3"></span>
+                                            </div>
+                                            <div class="count-star">
+                                                (3)
+                                            </div>
+                                        </div>
+                                        <ul class="product-attributes">
+                                            <li>
+                                                Material:
+                                            </li>
+                                            <li>
+                                                <a href="#">Plastic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Woody</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-color">
+                                                Color:
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Black</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">White</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Brown</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-text-label">
+                                                Pots Size:
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XS</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">S</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">M</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">L</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XL</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-info-right">
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                        <div class="product-list-message">
+                                            <i class="icon fa fa-truck" aria-hidden="true"></i>
+                                            UK Free Delivery
+                                        </div>
+                                        <form class="cart">
+                                            <div class="single_variation_wrap">
+                                                <div class="quantity">
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                        <input type="text" data-step="1" data-min="0" value="1"
+                                                               title="Qty" class="input-qty qty" size="4">
+                                                        <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                    </div>
+                                                </div>
+                                                <button class="single_add_to_cart_button button">Add to cart</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-item style-list col-lg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ts-12">
+                            <div class="product-inner equal-element">
+                                <div class="product-top">
+                                    <div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+                                    </div>
+                                </div>
+                                <div class="products-bottom-content">
+                                    <div class="product-thumb">
+                                        <div class="thumb-inner">
+                                            <a href="#">
+                                                <img src="../assets/images/product-item-6.jpg" alt="img">
+                                            </a>
+                                            <a href="#" class="button quick-wiew-button">Quick View</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-left">
+                                        <div class="yith-wcwl-add-to-wishlist">
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="#">Add to Wishlist</a>
+                                            </div>
+                                        </div>
+                                        <h5 class="product-name product_title">
+                                            <a href="#">Drop Earrings</a>
+                                        </h5>
+                                        <div class="stars-rating">
+                                            <div class="star-rating">
+                                                <span class="star-3"></span>
+                                            </div>
+                                            <div class="count-star">
+                                                (3)
+                                            </div>
+                                        </div>
+                                        <ul class="product-attributes">
+                                            <li>
+                                                Material:
+                                            </li>
+                                            <li>
+                                                <a href="#">Plastic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Woody</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-color">
+                                                Color:
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Black</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">White</a>
+                                            </li>
+                                            <li class="swatch-color">
+                                                <a href="#">Brown</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="attributes-display">
+                                            <li class="swatch-text-label">
+                                                Pots Size:
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XS</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">S</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">M</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">L</a>
+                                            </li>
+                                            <li class="swatch-text-label">
+                                                <a href="#">XL</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-info-right">
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                        <div class="product-list-message">
+                                            <i class="icon fa fa-truck" aria-hidden="true"></i>
+                                            UK Free Delivery
+                                        </div>
+                                        <form class="cart">
+                                            <div class="single_variation_wrap">
+                                                <div class="quantity">
+                                                    <div class="control">
+                                                        <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                        <input type="text" data-step="1" data-min="0" value="1"
+                                                               title="Qty" class="input-qty qty" size="4">
+                                                        <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                    </div>
+                                                </div>
+                                                <button class="single_add_to_cart_button button">Add to cart</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </li>
                     </ul>
-                    <div class="pagination clearfix style3">
+                    <div class="pagination clearfix style2">
                         <div class="nav-link">
                             <a href="#" class="page-numbers"><i class="icon fa fa-angle-left"
                                                                 aria-hidden="true"></i></a>
@@ -1430,7 +1460,7 @@
 <div class="footer-device-mobile">
     <div class="wapper">
         <div class="footer-device-mobile-item device-home">
-            <a href="index.html">
+            <a href="../index.html">
 					<span class="icon">
 						<i class="fa fa-home" aria-hidden="true"></i>
 					</span>
@@ -1469,25 +1499,25 @@
 <a href="#" class="backtotop">
     <i class="fa fa-angle-double-up"></i>
 </a>
-<script src="assets/js/jquery-1.12.4.min.js"></script>
-<script src="assets/js/jquery.plugin-countdown.min.js"></script>
-<script src="assets/js/jquery-countdown.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/magnific-popup.min.js"></script>
-<script src="assets/js/isotope.min.js"></script>
-<script src="assets/js/jquery.scrollbar.min.js"></script>
-<script src="assets/js/jquery-ui.min.js"></script>
-<script src="assets/js/mobile-menu.js"></script>
-<script src="assets/js/chosen.min.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/jquery.elevateZoom.min.js"></script>
-<script src="assets/js/jquery.actual.min.js"></script>
-<script src="assets/js/fancybox/source/jquery.fancybox.js"></script>
-<script src="assets/js/lightbox.min.js"></script>
-<script src="assets/js/owl.thumbs.min.js"></script>
-<script src="assets/js/jquery.scrollbar.min.js"></script>
+<script th:src="@{../assets/js/jquery-1.12.4.min.js}"></script>
+<script th:src="@{../assets/js/jquery.plugin-countdown.min.js}"></script>
+<script th:src="@{../assets/js/jquery-countdown.min.js}"></script>
+<script th:src="@{../assets/js/bootstrap.min.js}"></script>
+<script th:src="@{../assets/js/owl.carousel.min.js}"></script>
+<script th:src="@{../assets/js/magnific-popup.min.js}"></script>
+<script th:src="@{../assets/js/isotope.min.js}"></script>
+<script th:src="@{../assets/js/jquery.scrollbar.min.js}"></script>
+<script th:src="@{../assets/js/jquery-ui.min.js}"></script>
+<script th:src="@{../assets/js/mobile-menu.js}"></script>
+<script th:src="@{../assets/js/chosen.min.js}"></script>
+<script th:src="@{../assets/js/slick.js}"></script>
+<script th:src="@{../assets/js/jquery.elevateZoom.min.js}"></script>
+<script th:src="@{../assets/js/jquery.actual.min.js}"></script>
+<script th:src="@{../assets/js/fancybox/source/jquery.fancybox.js}"></script>
+<script th:src="@{../assets/js/lightbox.min.js}"></script>
+<script th:src="@{../assets/js/owl.thumbs.min.js}"></script>
+<script th:src="@{../assets/js/jquery.scrollbar.min.js}"></script>
 <script src='https://ditu.google.cn/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
-<script src="assets/js/frontend-plugin.js"></script>
+<script th:src="@{../assets/js/frontend-plugin.js}"></script>
 </body>
 </html>

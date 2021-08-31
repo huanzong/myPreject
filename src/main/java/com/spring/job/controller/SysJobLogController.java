@@ -21,7 +21,7 @@ import java.util.Map;
  * @date 2018/4/18 17:19
  */
 @Controller
-@RequestMapping("/sys/joblog")
+@RequestMapping("/admin/sys/joblog")
 public class SysJobLogController {
 	@Autowired
 	private SysJobLogService sysJobLogService;

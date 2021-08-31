@@ -5,22 +5,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/index")
-public class IndexController {
+public class SystemController {
 
     /**
-     * 前台主页面
+     * 关于我们页面
      *
      * @return
      */
-    @GetMapping
+    @GetMapping("about")
     public String index() {
 
 
-        return "front/index";
+        return "front/system/about";
     }
-
-
-
 
 }

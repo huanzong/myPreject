@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Ysera - Products Grid</title>
+	<title>Ysera - Products List Fullwidth</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{../assets/images/favicon.png}"/>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/animate.min.css">
-	<link rel="stylesheet" href="assets/css/jquery-ui.css">
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/css/chosen.min.css">
-	<link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-	<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-	<link rel="stylesheet" href="assets/css/lightbox.min.css">
-	<link rel="stylesheet" href="assets/js/fancybox/source/jquery.fancybox.css">
-	<link rel="stylesheet" href="assets/css/jquery.scrollbar.min.css">
-	<link rel="stylesheet" href="assets/css/mobile-menu.css">
-	<link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" th:href="@{../css/bootstrap.min.css}">
+	<link rel="stylesheet" th:href="@{../css/font-awesome.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/owl.carousel.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/animate.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/jquery-ui.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/slick.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/chosen.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/pe-icon-7-stroke.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/magnific-popup.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/lightbox.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/js/fancybox/source/jquery.fancybox.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/jquery.scrollbar.min.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/mobile-menu.css}">
+	<link rel="stylesheet" th:href="@{../css/flaticon.css}">
+	<link rel="stylesheet" th:href="@{../assets/css/style.css}">
 </head>
 <body class="productsgrid-page">
 	<header class="header style7">
@@ -73,7 +73,7 @@
 				<div class="col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
 					<div class="logo">
 						<a href="index.html">
-							<img src="assets/images/logo.png" alt="img">
+							<img src="../assets/images/logo.png" alt="img">
 						</a>
 					</div>
 				</div>
@@ -276,7 +276,7 @@
 										<a href="gridproducts_bannerslider.html">Grid Bannerslider</a>
 									</li>
 									<li class="menu-item">
-										<a href="listproducts.html">List</a>
+										<a href="product/listproducts.html">List</a>
 									</li>
 								</ul>
 							</li>
@@ -312,13 +312,13 @@
 												<h2 class="widgettitle">Product</h2>
 												<ul class="menu">
 													<li class="menu-item">
-														<a href="productdetails-fullwidth.html">Product Fullwidth</a>
+														<a href="product/productdetails-fullwidth.html">Product Fullwidth</a>
 													</li>
 													<li class="menu-item">
-														<a href="productdetails-leftsidebar.html">Product left sidebar</a>
+														<a href="product/productdetails-leftsidebar.html">Product left sidebar</a>
 													</li>
 													<li class="menu-item">
-														<a href="productdetails-rightsidebar.html">Product right sidebar</a>
+														<a href="product/productdetails-rightsidebar.html">Product right sidebar</a>
 													</li>
 												</ul>
 											</div>
@@ -379,7 +379,7 @@
 			<div class="item mobile-logo">
 				<div class="logo">
 					<a href="#">
-						<img src="assets/images/logo.png" alt="img">
+						<img src="../assets/images/logo.png" alt="img">
 					</a>
 				</div>
 			</div>
@@ -497,7 +497,7 @@
 							</form>
 							<div class="grid-view-mode">
 								<div class="inner">
-									<a href="listproducts.html" class="modes-mode mode-list">
+									<a href="productList" class="modes-mode mode-list">
 										<span></span>
 										<span></span>
 									</a>
@@ -525,7 +525,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-1.jpg" alt="img">
+												<img src="../assets/images/product-item-1.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -573,7 +573,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-2.jpg" alt="img">
+												<img src="../assets/images/product-item-2.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -628,7 +628,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-3.jpg" alt="img">
+												<img src="../assets/images/product-item-3.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -676,7 +676,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-4.jpg" alt="img">
+												<img src="../assets/images/product-item-4.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -724,7 +724,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-5.jpg" alt="img">
+												<img src="../assets/images/product-item-5.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -779,7 +779,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-6.jpg" alt="img">
+												<img src="../assets/images/product-item-6.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -827,7 +827,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-7.jpg" alt="img">
+												<img src="../assets/images/product-item-7.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -875,7 +875,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-20.jpg" alt="img">
+												<img src="../assets/images/product-item-20.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -930,7 +930,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-9.jpg" alt="img">
+												<img src="../assets/images/product-item-9.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -978,7 +978,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-8.jpg" alt="img">
+												<img src="../assets/images/product-item-8.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -1033,7 +1033,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-21.jpg" alt="img">
+												<img src="../assets/images/product-item-21.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -1088,7 +1088,7 @@
 									<div class="product-thumb">
 										<div class="thumb-inner">
 											<a href="#">
-												<img src="assets/images/product-item-22.jpg" alt="img">
+												<img src="../assets/images/product-item-22.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
 												<div class="yith-wcwl-add-to-wishlist">
@@ -1465,25 +1465,25 @@
 		<i class="fa fa-angle-double-up"></i>
 	</a>
 
-	<script src="assets/js/jquery-1.12.4.min.js"></script>
-	<script src="assets/js/jquery.plugin-countdown.min.js"></script>
-	<script src="assets/js/jquery-countdown.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/magnific-popup.min.js"></script>
-	<script src="assets/js/isotope.min.js"></script>
-	<script src="assets/js/jquery.scrollbar.min.js"></script>
-	<script src="assets/js/jquery-ui.min.js"></script>
-	<script src="assets/js/mobile-menu.js"></script>
-	<script src="assets/js/chosen.min.js"></script>
-	<script src="assets/js/slick.js"></script>
-	<script src="assets/js/jquery.elevateZoom.min.js"></script>
-	<script src="assets/js/jquery.actual.min.js"></script>
-	<script src="assets/js/fancybox/source/jquery.fancybox.js"></script>
-	<script src="assets/js/lightbox.min.js"></script>
-	<script src="assets/js/owl.thumbs.min.js"></script>
-	<script src="assets/js/jquery.scrollbar.min.js"></script>
+	<script th:src="@{../assets/js/jquery-1.12.4.min.js}"></script>
+	<script th:src="@{../assets/js/jquery.plugin-countdown.min.js}"></script>
+	<script th:src="@{../assets/js/jquery-countdown.min.js}"></script>
+	<script th:src="@{../assets/js/bootstrap.min.js}"></script>
+	<script th:src="@{../assets/js/owl.carousel.min.js}"></script>
+	<script th:src="@{../assets/js/magnific-popup.min.js}"></script>
+	<script th:src="@{../assets/js/isotope.min.js}"></script>
+	<script th:src="@{../assets/js/jquery.scrollbar.min.js}"></script>
+	<script th:src="@{../assets/js/jquery-ui.min.js}"></script>
+	<script th:src="@{../assets/js/mobile-menu.js}"></script>
+	<script th:src="@{../assets/js/chosen.min.js}"></script>
+	<script th:src="@{../assets/js/slick.js}"></script>
+	<script th:src="@{../assets/js/jquery.elevateZoom.min.js}"></script>
+	<script th:src="@{../assets/js/jquery.actual.min.js}"></script>
+	<script th:src="@{../assets/js/fancybox/source/jquery.fancybox.js}"></script>
+	<script th:src="@{../assets/js/lightbox.min.js}"></script>
+	<script th:src="@{../assets/js/owl.thumbs.min.js}"></script>
+	<script th:src="@{../assets/js/jquery.scrollbar.min.js}"></script>
 	<script src='https://ditu.google.cn/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
-	<script src="assets/js/frontend-plugin.js"></script>
+	<script th:src="@{../assets/js/frontend-plugin.js}"></script>
 </body>
 </html>
